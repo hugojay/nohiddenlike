@@ -1,0 +1,14 @@
+{
+  "name": "No HIDDEN Like Button",
+  "version": "0.0.1",/*
+  "icons": { 
+  	"128": "icon.jpg" },*/
+  "description": "也可以說是防毒！告別詐騙網頁，遏止隱藏的「按讚」鈕讓你不知不覺中點到讚，造成塗鴉牆上冒出尷尬的內容！",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["initialize.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
